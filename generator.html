@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مولد الأفكار - موقع مولد أفكار المشاريع الذكي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-lightbulb"></i>
+            <span>IdeaGene</span>
+        </div>
+        
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-right"></i>
+            <span>العودة للصفحة الرئيسية</span>
+        </a>
+        
+        <div class="language-switch" id="language-switch">
+            <i class="fas fa-language"></i>
+            <span>English</span>
+        </div>
+        
+        <div class="page-header">
+            <div class="header-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <h1>مولد الأفكار</h1>
+        </div>
+        
+        <div class="idea-options">
+            <select id="category-select">
+                <option value="technology">تكنولوجيا</option>
+                <option value="business">أعمال</option>
+                <option value="education">تعليم</option>
+                <option value="health">صحة</option>
+                <option value="entertainment">ترفيه</option>
+                <option value="social">اجتماعي</option>
+                <option value="environmental">بيئي</option>
+                <option value="other">أخرى</option>
+            </select>
+            
+            <button id="generate-btn" class="primary-btn">
+                <i class="fas fa-magic"></i>
+                توليد فكرة
+            </button>
+            
+            <button id="save-btn" class="secondary-btn">
+                <i class="fas fa-bookmark"></i>
+                حفظ الفكرة
+            </button>
+        </div>
+        
+        <div id="idea-container">
+            <p id="idea-text">اضغط على زر "توليد فكرة" للحصول على فكرة مشروع جديدة</p>
+        </div>
+        
+        <div class="action-buttons">
+            <button id="enhance-btn" class="action-btn">
+                <i class="fas fa-wand-magic-sparkles"></i>
+                تحسين الفكرة
+            </button>
+            <button id="analyze-btn" class="action-btn">
+                <i class="fas fa-chart-line"></i>
+                تحليل السوق
+            </button>
+            <button id="share-btn" class="action-btn">
+                <i class="fas fa-share-alt"></i>
+                مشاركة
+            </button>
+        </div>
+        
+        <div class="idea-details" id="idea-details">
+            <div class="section-title">
+                <i class="fas fa-info-circle"></i>
+                <h3>تفاصيل الفكرة</h3>
+            </div>
+            <div id="market-analysis"></div>
+            <div id="implementation-steps"></div>
+        </div>
+        
+        <div class="saved-ideas" id="saved-ideas">
+            <div class="section-title">
+                <i class="fas fa-bookmark"></i>
+                <h3>الأفكار المحفوظة</h3>
+            </div>
+            <div id="saved-ideas-list">
+                <!-- سيتم إضافة الأفكار المحفوظة هنا -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
